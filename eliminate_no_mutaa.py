@@ -11,14 +11,16 @@ def get_peptides(hit):
     poss_comb = []
     no_hits = hit.split(';')
     for i in range(0, len(no_hits)):
-       peptide = no_hits[i].split('|')
-       peptides.append(peptide[3])
+       if no_hits[i].startswith('GN'):
+          peptide = no_hits[i].split('|')
+          if(len(peptide[3]) == 7):
+             peptides.append(peptide[3])
     for pep in range(0,len(peptides)):
-         beg = peptides[pep][0:4]
-         end = peptides[pep][3:7]
-         mid_1 = peptides[pep][1:5]
-         mid_2 = peptides[pep][2:6]
-         poss_comb = [beg, end, mid_1, mid_2]
+       beg = peptides[pep][0:4]
+       end = peptides[pep][3:7]
+       mid_1 = peptides[pep][1:5]
+       mid_2 = peptides[pep][2:6]
+       poss_comb = [beg, end, mid_1, mid_2]
     return poss_comb
 
 def main():
@@ -38,7 +40,6 @@ def main():
       line_no += 1
       if hits[i].startswith('GN'):
          peptides = get_peptides(hits[i])
-         print(peptides)
          if any(x in sequences[i] for x in peptides):
             out_df = out_df.append(pd_out.iloc[[i]])
       else:
