@@ -18,7 +18,7 @@ xlrd
 ## **Usage**
 
 
-*Linux/Mac*
+**Linux/Mac**
 
 
 git clone https://github.com/maguileraf/XMAn_nohit.git
@@ -27,9 +27,7 @@ cd XMAn_nohit
 
 python eliminate_no_mutaa.py protein_id_excel_filename output_filename
 
-
-*Windows*
-
+**Windows**
 
 download python (https://www.python.org/downloads/)
 
