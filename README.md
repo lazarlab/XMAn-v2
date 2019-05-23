@@ -22,17 +22,17 @@ xlrd
 
 Install dependencies with pip:
 
-$ pip install pandas
+$ `pip install pandas`
 
-$ pip install xlrd
+$ `pip install xlrd`
 
-$ pip install openpyxl
+$ `pip install openpyxl`
 
-$ git clone https://github.com/lazarlab/XMAn-v2.git
+$ `git clone https://github.com/lazarlab/XMAn-v2.git`
 
-$ cd XMAn-v2/
+$ `cd XMAn-v2/`
 
-$ python eliminate_nonmut_peptides.py protein_id_excel_filename output_filename
+$ `python eliminate_nonmut_peptides.py protein_id_excel_filename output_filename`
 
 **Windows**
 
@@ -42,11 +42,11 @@ Go to windows start and in search type 'cmd' and click to open
 
 Type the following commands followed by enter to install dependencies:
 
-$ pip install pandas
+$ `pip install pandas`
 
-$ pip install xlrd
+$ `pip install xlrd`
 
-$ pip install openpyxl
+$ `pip install openpyxl`
 
 download this repository as a zip folder under the green botton "Clone or download"
 
@@ -54,6 +54,6 @@ unzip the folder
 
 Type the following commands followed by enter to run the script:
 
-$ cd PathToDownloadedRepository\XMan-v2-master (if in Downloads type cd Downloads\XMan-v2-master)
+$ `cd PathToDownloadedRepository\XMan-v2-master` (if in Downloads type cd Downloads\XMan-v2-master\XMan-v2-master)
 
-$ python eliminate_nonmut_peptides.py <input_filename>.xlsx <output_filename>.xlsx
+$ `python eliminate_nonmut_peptides.py <input_filename>.xlsx <output_filename>.xlsx`
