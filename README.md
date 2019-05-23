@@ -20,18 +20,25 @@ xlrd
 
 **Linux/Mac**
 
+Install dependencies with pip:
 
-git clone https://github.com/maguileraf/XMAn_nohit.git
+pip install pandas
 
-cd XMAn_nohit
+pip install xlrd
 
-python eliminate_no_mutaa.py protein_id_excel_filename output_filename
+pip install openpyxl
+
+git clone https://github.com/lazarlab/XMAn-v2.git
+
+cd XMAn-v2/
+
+python eliminate_nonmut_peptides.py protein_id_excel_filename output_filename
 
 **Windows**
 
 download python (https://www.python.org/downloads/)
 
-go to windows start and in search type 'cmd' and click to open
+Go to windows start and in search type 'cmd' and click to open
 
 Type the following commands followed by enter to install dependencies:
 
